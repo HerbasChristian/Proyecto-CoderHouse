@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Politicas</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- TipografiaA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="./index.html"
+            ><img src="./Imagenes/logo.jpg" alt="Logo" />
+          </a>
+        </div>
+        <!-- Titulo de la pagina -->
+        <div>
+          <h1 class="header__nombre">Caught in the 80's</h1>
+        </div>
+        <!-- Barra de navegacion -->
+        <div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./musica.html">Música</a></li>
+              <li><a href="./cine.html">Cine</a></li>
+              <li><a href="./moda.html">Moda</a></li>
+              <li><a href="./videojuegos.html">Videojuegos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main__informacion">
+      <!-- Seccion -->
+      <section>
+        <div class="main__parrafo">
+          <h2><strong>Cómo utilizamos su información</strong></h2>
+          <p>
+            Nosotros utilizamos la información proporcionada por usted y la
+            información que recopilamos con el fin de brindar, mantener y
+            mejorar nuestros servicios, ya sea para efectuar la resolución de
+            problemas, el análisis de datos, realizar pruebas, investigaciones,
+            análisis estadísticos y mediciones, entre otros propósitos. Además,
+            también utilizamos esta información para proporcionarle los
+            servicios que solicita, desarrollar nuevos servicios, realizar
+            sugerencias personalizadas acerca de características importantes,
+            ofrecerle contenido personalizado, permitirle participar en
+            características interactivas de nuestro servicio, manejar cuentas,
+            proporcionarle publicidad adaptada a sus preferencias, enviarle
+            materiales promocionales de nuestra parte o de parte de nuestros
+            afiliados y socios comerciales confiables, mantener nuestros
+            servicios, la empresa y a los usuarios seguros, cumplir con las
+            leyes y regulaciones vigentes, y proteger o ejercer nuestros
+            derechos legales o defendernos de demandas legales.
+          </p>
+          <p>
+            Desde donde quiera que se contacte con nosotros, utilizamos la
+            información que nos proporciona para resolver cuestiones que ocurran
+            cuando utilice nuestros servicios. También utilizamos información
+            como su dirección de correo electrónico para responderle cuando nos
+            contacte, para informarle acerca de cambios en nuestras políticas y
+            términos o cambios o mejoras de nuestros servicios y para informarle
+            acerca de los servicios que ofrecemos.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <!-- Formulario -->
+      <div class="footer__formulario">
+        <form action="" method="" enctype="">
+          <fieldset>
+            <legend>
+              <strong>¿Buscas noticias de los 80's?</strong>
+            </legend>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre" required />
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text" name="apellido" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+            <label for="calendario">Fecha de nacimiento</label>
+            <input id="calendario" type="date" name="calendario" required />
+            <label for="pais">Lugar de nacimiento</label>
+            <select name="pais" id="pais" required>
+              <option value="selecc">Seleccione un país</option>
+              <option value="ARG">Argentina</option>
+              <option value="CL">Chile</option>
+              <option value="URU">Uruguay</option>
+              <option value="PY">Paraguay</option>
+              <option value="BO">Bolivia</option>
+            </select>
+            <textarea
+              name="comentario"
+              id="comentario"
+              cols="30"
+              rows="10"
+              placeholder="Dejanos un comentario"
+            ></textarea>
+            <label for="checkbox">Acepto términos y condiciones</label>
+            <input id="checkbox" type="checkbox" name="checkbox" />
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </fieldset>
+        </form>
+      </div>
+      <!-- Informacion  -->
+      <div class="footer__links">
+        <ul class="footer__ul">
+          <h4>Información</h4>
+          <li>
+            <a href="./contacto.html"> Contáctenos </a>
+          </li>
+          <li>
+            <a href="./nosotros.html"> Acerca de nosotros </a>
+          </li>
+          <li>
+            <a href="./politicas.html"> Politicas de privacidad </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__logos">
+        <a href="https://www.facebook.com"
+          ><img
+            class="footer__logo"
+            src="./Imagenes/facebook.png"
+            alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img
+            class="footer__logo"
+            src="./Imagenes/instagram.png"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img class="footer__logo" src="./Imagenes/twitter.png" alt="Twitter"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

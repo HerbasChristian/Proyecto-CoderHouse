@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- TipografiaA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="./index.html"
+            ><img src="./Imagenes/logo.jpg" alt="Logo" />
+          </a>
+        </div>
+        <!-- Titulo de la pagina -->
+        <div>
+          <h1 class="header__nombre">Caught in the 80's</h1>
+        </div>
+        <!-- Barra de navegacion -->
+        <div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./musica.html">Música</a></li>
+              <li><a href="./cine.html">Cine</a></li>
+              <li><a href="./moda.html">Moda</a></li>
+              <li><a href="./videojuegos.html">Videojuegos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main__informacion">
+      <!-- Seccion -->
+      <section>
+        <div class="main__parrafo">
+          <h2><strong>Caught in the 80's</strong></h2>
+          <p>
+            Caught in the 80's es una pagina fan de los 80's, donde podras
+            encontrar lo mas destacado de dicha decada. Nos mantemos en
+            constante actualizacion para traerte lo mejor de los 80's.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <!-- Formulario -->
+      <div class="footer__formulario">
+        <form action="" method="" enctype="">
+          <fieldset>
+            <legend>
+              <strong>¿Buscas noticias de los 80's?</strong>
+            </legend>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre" required />
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text" name="apellido" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+            <label for="calendario">Fecha de nacimiento</label>
+            <input id="calendario" type="date" name="calendario" required />
+            <label for="pais">Lugar de nacimiento</label>
+            <select name="pais" id="pais" required>
+              <option value="selecc">Seleccione un país</option>
+              <option value="ARG">Argentina</option>
+              <option value="CL">Chile</option>
+              <option value="URU">Uruguay</option>
+              <option value="PY">Paraguay</option>
+              <option value="BO">Bolivia</option>
+            </select>
+            <textarea
+              name="comentario"
+              id="comentario"
+              cols="30"
+              rows="10"
+              placeholder="Dejanos un comentario"
+            ></textarea>
+            <label for="checkbox">Acepto términos y condiciones</label>
+            <input id="checkbox" type="checkbox" name="checkbox" />
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </fieldset>
+        </form>
+      </div>
+      <!-- Informacion  -->
+      <div class="footer__links">
+        <ul class="footer__ul">
+          <h4>Información</h4>
+          <li>
+            <a href="./contacto.html"> Contáctenos </a>
+          </li>
+          <li>
+            <a href="./nosotros.html"> Acerca de nosotros </a>
+          </li>
+          <li>
+            <a href="./politicas.html"> Politicas de privacidad </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__logos">
+        <a href="https://www.facebook.com"
+          ><img
+            class="footer__logo"
+            src="./Imagenes/facebook.png"
+            alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img
+            class="footer__logo"
+            src="./Imagenes/instagram.png"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img class="footer__logo" src="./Imagenes/twitter.png" alt="Twitter"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
