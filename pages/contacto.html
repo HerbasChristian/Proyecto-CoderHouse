@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nosotros</title>
+    <title>Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!-- TipografiaA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,41 +23,82 @@
     />
   </head>
   <body>
-    <header id="header">
-      <div class="header__top">
-        <div class="header__logo">
-          <a href="./index.html"
-            ><img src="./Imagenes/logo.jpg" alt="Logo" />
-          </a>
-        </div>
-        <!-- Titulo de la pagina -->
-        <div>
-          <h1 class="header__nombre">Caught in the 80's</h1>
-        </div>
-        <!-- Barra de navegacion -->
-        <div>
-          <nav class="header__nav">
-            <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./musica.html">Música</a></li>
-              <li><a href="./cine.html">Cine</a></li>
-              <li><a href="./moda.html">Moda</a></li>
-              <li><a href="./videojuegos.html">Videojuegos</a></li>
+    <!-- ===================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ===================================== -->
+    <header class="sticky-top border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+        <div class="container-fluid d-flex justify-content-center px-0">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../images/logo.jpg"
+              class="rounded-circle border border-2 border-primary"
+              alt="Logo"
+              width="100 rem"
+              height="auto"
+              class="d-inline-block align-text-top"
+          /></a>
+          <div class="d-flex">
+            <h1 class="header__nombre fs-1 px-lg-5">Caught in the 80's</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/musica.html">Música</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/cine.html">Cine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/moda.html">Moda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/videojuegos.html"
+                  >Videojuegos</a
+                >
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
+    <!-- ===================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ===================================== -->
+    <!-- ------------------------------------- -->
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
     <main class="main__informacion">
       <!-- Seccion -->
       <section>
         <div class="main__parrafo">
-          <h2><strong>Caught in the 80's</strong></h2>
+          <h2><strong>Contactanos</strong></h2>
           <p>
-            Caught in the 80's es una pagina fan de los 80's, donde podras
-            encontrar lo mas destacado de dicha decada. Nos mantemos en
-            constante actualizacion para traerte lo mejor de los 80's.
+            Contactanos utilizando el formulario que esta abajo en esta página o
+            por email, y ni bien podamos te respondemos todas tus consultas e
+            inquietudes sobre el funcionamiento de esta tienda.
           </p>
+          <a href="mailto:info@los80.com.ar">info@los80.com.ar</a>
         </div>
       </section>
     </main>

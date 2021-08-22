@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Politicas</title>
+    <title>Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!-- TipografiaA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,62 +23,80 @@
     />
   </head>
   <body>
-    <header id="header">
-      <div class="header__top">
-        <div class="header__logo">
-          <a href="./index.html"
-            ><img src="./Imagenes/logo.jpg" alt="Logo" />
-          </a>
-        </div>
-        <!-- Titulo de la pagina -->
-        <div>
-          <h1 class="header__nombre">Caught in the 80's</h1>
-        </div>
-        <!-- Barra de navegacion -->
-        <div>
-          <nav class="header__nav">
-            <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./musica.html">Música</a></li>
-              <li><a href="./cine.html">Cine</a></li>
-              <li><a href="./moda.html">Moda</a></li>
-              <li><a href="./videojuegos.html">Videojuegos</a></li>
+    <!-- ===================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ===================================== -->
+    <header class="sticky-top border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+        <div class="container-fluid d-flex justify-content-center px-0">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../images/logo.jpg"
+              class="rounded-circle border border-2 border-primary"
+              alt="Logo"
+              width="100 rem"
+              height="auto"
+              class="d-inline-block align-text-top"
+          /></a>
+          <div class="d-flex">
+            <h1 class="header__nombre fs-1 px-lg-5">Caught in the 80's</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/musica.html">Música</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/cine.html">Cine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/moda.html">Moda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/videojuegos.html"
+                  >Videojuegos</a
+                >
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
+    <!-- ===================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ===================================== -->
+    <!-- ------------------------------------- -->
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
     <main class="main__informacion">
       <!-- Seccion -->
       <section>
         <div class="main__parrafo">
-          <h2><strong>Cómo utilizamos su información</strong></h2>
+          <h2><strong>Caught in the 80's</strong></h2>
           <p>
-            Nosotros utilizamos la información proporcionada por usted y la
-            información que recopilamos con el fin de brindar, mantener y
-            mejorar nuestros servicios, ya sea para efectuar la resolución de
-            problemas, el análisis de datos, realizar pruebas, investigaciones,
-            análisis estadísticos y mediciones, entre otros propósitos. Además,
-            también utilizamos esta información para proporcionarle los
-            servicios que solicita, desarrollar nuevos servicios, realizar
-            sugerencias personalizadas acerca de características importantes,
-            ofrecerle contenido personalizado, permitirle participar en
-            características interactivas de nuestro servicio, manejar cuentas,
-            proporcionarle publicidad adaptada a sus preferencias, enviarle
-            materiales promocionales de nuestra parte o de parte de nuestros
-            afiliados y socios comerciales confiables, mantener nuestros
-            servicios, la empresa y a los usuarios seguros, cumplir con las
-            leyes y regulaciones vigentes, y proteger o ejercer nuestros
-            derechos legales o defendernos de demandas legales.
-          </p>
-          <p>
-            Desde donde quiera que se contacte con nosotros, utilizamos la
-            información que nos proporciona para resolver cuestiones que ocurran
-            cuando utilice nuestros servicios. También utilizamos información
-            como su dirección de correo electrónico para responderle cuando nos
-            contacte, para informarle acerca de cambios en nuestras políticas y
-            términos o cambios o mejoras de nuestros servicios y para informarle
-            acerca de los servicios que ofrecemos.
+            Caught in the 80's es una pagina fan de los 80's, donde podras
+            encontrar lo mas destacado de dicha decada. Nos mantemos en
+            constante actualizacion para traerte lo mejor de los 80's.
           </p>
         </div>
       </section>

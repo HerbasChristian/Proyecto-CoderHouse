@@ -1,0 +1,30 @@
+footer {
+  border-top: 0.1rem solid #dfcf99 !important;
+  div {
+    form {
+      fieldset {
+        color: $default-tittle ;
+      }
+        .border-primary{
+          border: solid $default-tittle !important;
+      }
+    }
+  }
+  ul {
+    h4{
+      color: $default-tittle;
+    }
+    li {
+      a {
+        color: $default-text;
+      }
+    }
+  }
+  div{
+    a{
+      img{
+        width: 2rem;
+      }
+    }
+  }
+}

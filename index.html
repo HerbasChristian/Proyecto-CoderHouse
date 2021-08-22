@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- TipografiaA -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,111 +23,204 @@
     />
   </head>
   <body>
-    <header id="header">
-      <div class="header__top">
-        <div class="header__logo">
-          <a href="./index.html"><img src="./Imagenes/logo.jpg" alt="Logo" /></a>
-        </div>
-        <!-- Titulo de la pagina -->
-        <div>
-          <h1 class="header__nombre">Caught in the 80's</h1>
-        </div>
-        <!-- Barra de navegacion -->
-        <div>
-          <nav class="header__nav">
-            <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./musica.html">Música</a></li>
-              <li><a href="./cine.html">Cine</a></li>
-              <li><a href="./moda.html">Moda</a></li>
-              <li><a href="./videojuegos.html">Videojuegos</a></li>
+    <!-- ===================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ===================================== -->
+    <header class="sticky-top border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+        <div class="container-fluid d-flex justify-content-center px-0">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              src="images/logo.jpg"
+              class="rounded-circle border border-2 border-primary"
+              alt="Logo"
+              width="100 rem"
+              height="auto"
+              class="d-inline-block align-text-top"
+          /></a>
+          <div class="d-flex">
+            <h1 class="header__nombre fs-1 px-lg-5">Caught in the 80's</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/musica.html">Música</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/cine.html">Cine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/moda.html">Moda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/videojuegos.html">Videojuegos</a>
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
-    <main id="main">
-      <!-- Seccion importante -->
-      <section class="main__img">
-        <div class="main__destacados">
-          <a href="./musica.html"><img src="./Imagenes/musica.jpg" alt="Música" /><h3 class="main__h3" >Música</h3></a>
+    <!-- ===================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ===================================== -->
+    <!-- ------------------------------------- -->
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
+    <main>
+      <section class="container-fluid py-4">
+        <div class="row mx-0 justify-content-center">
+          <div class="col-12 p-0 col-md-9 d-lg-none">
+            <a href="./musica.html"><img src="./images/musica-x.jpg" alt="Música" class="w-100 border border-primary rounded-3"/><h3>Música</h3></a>
+          </div>
+          <div class="col-lg-3 col-xl-2 p-0 px-1 d-none d-sm-none d-md-none d-lg-block main__imgy">
+            <a href="./musica.html"><img src="./images/musica-y.jpg" alt="Música" class="h-75 w-100 border border-primary rounded-3"/><h3>Música</h3></a>
+          </div>
+          <div class="col-lg-3 col-xl-2 p-0 px-1 d-none d-sm-none d-md-none d-lg-block main__imgy">
+            <a href="./cine.html"><img src="./images/cine-y.jpg" alt="Cine" class="h-75 w-100 border border-primary rounded-3"/><h3>Cine</h3></a>
+          </div>
+          <div class="col-lg-3 col-xl-2 p-0 px-1 d-none d-sm-none d-md-none d-lg-block main__imgy">
+            <a href="./moda.html"><img src="./images/moda-y.png" alt="Moda" class="h-75 w-100 border border-primary rounded-3"/><h3>Moda</h3></a>
+          </div>
+          <div class="col-lg-3 col-xl-2 p-0 px-1 d-none d-sm-none d-md-none d-lg-block main__imgy">
+            <a href="./videojuegos.html"><img src="./images/videojuegos-y.jpg" alt="Videojuegos" class="h-75 w-100 border border-primary rounded-3"/><h3>Videojuegos</h3></a>
+          </div>
         </div>
-        <div class="main__destacados">
-          <a href="./cine.html"><img src="./Imagenes/cine.jpg" alt="Cine" /><h3 class="main__h3" >Cine</h3></a>
+        <div class="row mx-0 justify-content-center">
+          <div class="col-12 p-0 col-md-9 d-lg-none">
+            <a href="./cine.html"><img src="./images/cine-x.jpeg" alt="Cine" class="w-100 border border-primary rounded-3" /><h3>Cine</h3></a>
+          </div>
         </div>
-        <div class="main__destacados">
-          <a href="./moda.html"><img src="./Imagenes/moda.png" alt="Moda" /><h3 class="main__h3" >Moda</h3></a>
+        <div class="row  mx-0 justify-content-center">
+          <div class="col-12 p-0 col-md-9 d-lg-none">
+            <a href="./moda.html"><img src="./images/moda-x.jpg" alt="Moda" class="w-100 border border-primary rounded-3" /><h3>Moda</h3></a>
+          </div>
         </div>
-        <div class="main__destacados">
-          <a href="./videojuegos.html"><img src="./Imagenes/videojuegos.jpg" alt="Videojuegos" /> <h3 class="main__h3" >Videojuegos</h3> </a>
+        <div class="row mx-0 justify-content-center">
+          <div class="col-12 p-0 col-md-9 d-lg-none">
+            <a href="./videojuegos.html"><img src="./images/videojuegos-x.png" alt="Videojuegos"class="w-100 border border-primary rounded-3"/><h3>Videojuegos</h3></a>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
-    <footer id="footer">
-      <!-- Formulario -->
-      <div class="footer__formulario">
-        <form action="" method="" enctype="">
-          <fieldset>
-            <legend >
-              <strong>¿Buscas noticias de los 80's?</strong>
-            </legend>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" name="nombre" required />
-            <label for="apellido">Apellido</label>
-            <input id="apellido" type="text" name="apellido" required />
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required />
-            <label for="calendario">Fecha de nacimiento</label>
-            <input id="calendario" type="date" name="calendario" required />
-            <label for="pais">Lugar de nacimiento</label>
-            <select name="pais" id="pais" required>
-              <option value="selecc">Seleccione un país</option>
-              <option value="ARG">Argentina</option>
-              <option value="CL">Chile</option>
-              <option value="URU">Uruguay</option>
-              <option value="PY">Paraguay</option>
-              <option value="BO">Bolivia</option>
-            </select>
-            <textarea
-              name="comentario"
-              id="comentario"
-              cols="30"
-              rows="10"
-              placeholder="Dejanos un comentario"
-            ></textarea>
-            <label for="checkbox">Acepto términos y condiciones</label>
-            <input id="checkbox" type="checkbox" name="checkbox" />
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Borrar" />
-          </fieldset>
-        </form>
-      </div>
-      <!-- Informacion  -->
-      <div class="footer__links">
-        <ul class="footer__ul">
-          <h4>Información</h4>
-          <li>
-            <a href="./contacto.html">
-              Contáctenos
-            </a>
-          </li>
-          <li>
-            <a href="./nosotros.html">
-              Acerca de nosotros
-            </a>
-          </li>
-          <li>
-            <a href="./politicas.html">
-              Politicas de privacidad
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__logos">
-        <a href="https://www.facebook.com" ><img class="footer__logo" src="./Imagenes/facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com" ><img class="footer__logo" src="./Imagenes/instagram.png" alt="Instagram"></a>
-        <a href="https://www.twitter.com" ><img class="footer__logo" src="./Imagenes/twitter.png" alt="Twitter"></a>
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+    <footer class=" ">
+      <div class="container-fluid bg-dark p-4 row mx-0 row">
+        <!-- Formulario -->
+        <div class="w-sm-50 col-3 ">
+          <form class="row g-3 ">
+            <fieldset class="border border-primary rounded">
+              <legend>
+                <strong>¿Buscas noticias de los 80's?</strong>
+              </legend>
+              <div class="col-12 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required />
+              </div>
+              <div class="col-md-6">
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="Apellido" required />
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="col-12">
+                <label for="calendario" class="form-label">Calendario</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="calendario"
+                  required
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="pais" class="form-label">Lugar de nacimiento</label>
+                <select id="pais" class="form-select" required>
+                  <option selected>Selecciona un país...</option>
+                  <option value="ARG">Argentina</option>
+                  <option value="CL">Chile</option>
+                  <option value="URU">Uruguay</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="BO">Bolivia</option>
+                </select>
+              </div>
+              <div class="col-md-2 py-1">
+                <textarea
+                  name="comentario"
+                  id="comentario"
+                  cols="30"
+                  rows="10"
+                  placeholder="Dejanos un comentario"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Acepto términos y condiciones
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 py-1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <!-- Informacion  -->
+        <div class="col-3 px-0">
+          <ul class="px-1 py-2">
+            <h4>Información</h4>
+            <li>
+              <a href="./pages/contacto.html"> Contáctenos </a>
+            </li>
+            <li>
+              <a href="./pages/nosotros.html"> Acerca de nosotros </a>
+            </li>
+            <li>
+              <a href="./pages/politicas.html"> Politicas de privacidad </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-12 py-2">
+          <a href="https://www.facebook.com"><img src="./images/facebook.png" alt="Facebook" class="p-1"></a>
+          <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="Instagram" class="p-1"></a>
+          <a href="https://www.twitter.com"><img src="./images/twitter.png" alt="Twitter" class="p-1"></a>
+        </div>
       </div>
     </footer>
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
