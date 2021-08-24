@@ -90,8 +90,8 @@
     <!-- ===================================== -->
     <main class="main__musica">
       <!-- Seccion -->
-      <section>
-        <div class="main__parrafo">
+      <section class="fontdefault px-5 py-3">
+        <div class="parrafos p-4">
           <h2><strong>Géneros musicales</strong></h2>
           <p>
             Los años 80 fueron una época que revolucionó la industria de la
@@ -119,8 +119,8 @@
             Las canciones de los 80 hicieron que bandas como Bon Jovi y Guns N´
             Roses se convirtieran en iconos de la música.
           </p>
-          <div class="main__musicaimg">
-            <img src="./Imagenes/guns.jpg" alt="Guns 'n Roses" />
+          <div class="p-lg-5">
+            <img src="../images/guns.jpg" alt="Guns 'n Roses" class="w-100 border border-primary rounded-3" />
           </div>
           <h3><strong>Heavy metal</strong></h3>
           <p>
@@ -138,8 +138,8 @@
             género aún más potente y rápido, dejando a bandas como Metallica y
             Megadeth como las más populares.
           </p>
-          <div class="main__musicaimg">
-            <img src="./Imagenes/ironmaiden.jpg" alt="Iron Maiden" />
+          <div class="p-lg-5">
+            <img src="../images/ironmaiden.jpg" alt="Iron Maiden" class="w-100 border border-primary rounded-3"/>
           </div>
           <h3><strong>Post punk </strong></h3>
           <p>
@@ -150,8 +150,8 @@
             </strong>
             The Cure fue una de las bandas pioneras dentro de este género.
           </p>
-          <div class="main__musicaimg">
-            <img src="./Imagenes/thecure.jpg" alt="The Cure" />
+          <div class="p-lg-5">
+            <img src="../images/thecure.jpg" alt="The Cure" class="w-100 border border-primary rounded-3"/>
           </div>
           <h2>
             <strong>Artistas consagrados en los 80</strong>
@@ -192,77 +192,110 @@
         </div>
       </section>
     </main>
-    <footer id="footer">
-      <!-- Formulario -->
-      <div class="footer__formulario">
-        <form action="" method="" enctype="">
-          <fieldset>
-            <legend>
-              <strong>¿Buscas noticias de los 80's?</strong>
-            </legend>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" name="nombre" required />
-            <label for="apellido">Apellido</label>
-            <input id="apellido" type="text" name="apellido" required />
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required />
-            <label for="calendario">Fecha de nacimiento</label>
-            <input id="calendario" type="date" name="calendario" required />
-            <label for="pais">Lugar de nacimiento</label>
-            <select name="pais" id="pais" required>
-              <option value="selecc">Seleccione un país</option>
-              <option value="ARG">Argentina</option>
-              <option value="CL">Chile</option>
-              <option value="URU">Uruguay</option>
-              <option value="PY">Paraguay</option>
-              <option value="BO">Bolivia</option>
-            </select>
-            <textarea
-              name="comentario"
-              id="comentario"
-              cols="30"
-              rows="10"
-              placeholder="Dejanos un comentario"
-            ></textarea>
-            <label for="checkbox">Acepto términos y condiciones</label>
-            <input id="checkbox" type="checkbox" name="checkbox" />
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Borrar" />
-          </fieldset>
-        </form>
-      </div>
-      <!-- Informacion  -->
-      <div class="footer__links">
-        <ul class="footer__ul">
-          <h4>Información</h4>
-          <li>
-            <a href="./contacto.html"> Contáctenos </a>
-          </li>
-          <li>
-            <a href="./nosotros.html"> Acerca de nosotros </a>
-          </li>
-          <li>
-            <a href="./politicas.html"> Politicas de privacidad </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__logos">
-        <a href="https://www.facebook.com"
-          ><img
-            class="footer__logo"
-            src="./Imagenes/facebook.png"
-            alt="Facebook"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img
-            class="footer__logo"
-            src="./Imagenes/instagram.png"
-            alt="Instagram"
-        /></a>
-        <a href="https://www.twitter.com"
-          ><img class="footer__logo" src="./Imagenes/twitter.png" alt="Twitter"
-        /></a>
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+    <footer >
+      <div class="container-fluid bg-dark p-4 row mx-0 justify-content-center">
+        <!-- Formulario -->
+        <div class="w-sm-50 col-12 col-md-6 col-lg-8 col-xl-4">
+          <form class="row g-3 ">
+            <fieldset class="border border-primary rounded ">
+              <legend>
+                <strong>¿Buscas noticias de los 80's?</strong>
+              </legend>
+              <div class="col-12 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required />
+              </div>
+              <div class="col-md-6">
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="Apellido" required />
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="col-12">
+                <label for="calendario" class="form-label">Calendario</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="calendario"
+                  required
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="pais" class="form-label">Lugar de nacimiento</label>
+                <select id="pais" class="form-select" required>
+                  <option selected>Selecciona un país...</option>
+                  <option value="ARG">Argentina</option>
+                  <option value="CL">Chile</option>
+                  <option value="URU">Uruguay</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="BO">Bolivia</option>
+                </select>
+              </div>
+              <div class="col-md-2 py-1">
+                <textarea
+                  name="comentario"
+                  id="comentario"
+                  cols="30"
+                  rows="10"
+                  placeholder="Dejanos un comentario"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Acepto términos y condiciones
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 py-1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <!-- Informacion  -->
+        <div class="col-12 col-md-3 col-lg-2 px-0">
+          <ul class="px-1 py-2">
+            <h4>Información</h4>
+            <li>
+              <a href="../pages/contacto.html"> Contáctenos </a>
+            </li>
+            <li>
+              <a href="../pages/nosotros.html"> Acerca de nosotros </a>
+            </li>
+            <li>
+              <a href="../pages/politicas.html"> Politicas de privacidad </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12  col-md-3 col-lg-2 py-2">
+          <a href="https://www.facebook.com"><img src="../images/facebook.png" alt="Facebook" class="p-1"></a>
+          <a href="https://www.instagram.com"><img src="../images/instagram.png" alt="Instagram" class="p-1"></a>
+          <a href="https://www.twitter.com"><img src="../images/twitter.png" alt="Twitter" class="p-1"></a>
+        </div>
       </div>
     </footer>
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

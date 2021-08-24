@@ -52,10 +52,6 @@
   border: solid #80c4df !important;
 }
 
-main section {
-  background-image: url("../images/index.jpg");
-}
-
 main section div a {
   color: #dfcf99;
   text-decoration: none;
@@ -83,6 +79,10 @@ main section div a h3 {
   text-align: center;
 }
 
+main .main__index {
+  background-image: url(../images/index.jpg);
+}
+
 footer {
   border-top: 0.1rem solid #dfcf99 !important;
 }
@@ -103,20 +103,59 @@ footer ul li a {
   color: #a38d6d;
 }
 
+footer ul li a:hover {
+  color: white;
+}
+
 footer div a img {
   width: 2rem;
 }
 
-.container {
-  margin-top: 5%;
-  margin-bottom: 5%;
+.main__musica {
+  background-image: url(../images/bgmusica.jpg);
+  background-repeat: round;
 }
 
-.carousel-inner {
-  margin-left: 25vw;
+.main__musica section div div .border-primary {
+  border: solid #dfcf99 !important;
 }
 
-.carousel-item {
-  width: 50vw;
+.main__cine {
+  background-image: url(../images/bgcine.jpg);
+}
+
+.main__cine section div .main__carousel {
+  max-width: 50vh;
+}
+
+.main__cine section div .border-primary {
+  border: solid #dfcf99 !important;
+}
+
+.main__moda {
+  background-image: url(../images/bgmoda.png);
+  background-repeat: round;
+}
+
+.main__videojuegos {
+  background-image: url(../images/bgvideojuegos.jpg);
+  background-repeat: round;
+}
+
+.main__videojuegos section div div div div .border-primary {
+  border: solid #dfcf99 !important;
+}
+
+.fontdefault {
+  font-family: "Roboto", sans-serif;
+  color: #a38d6d;
+}
+
+.parrafos {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.background-informacion {
+  background-image: url(../images/bginformacion.jpg);
 }
 /*# sourceMappingURL=styles.css.map */

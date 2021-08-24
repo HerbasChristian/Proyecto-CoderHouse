@@ -1,0 +1,17 @@
+.main__videojuegos{
+  background-image: url(../images/bgvideojuegos.jpg);
+  background-repeat: round;
+  section{
+    div{
+      div{
+        div{
+          div{
+            .border-primary{
+              border: solid $default-tittle !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

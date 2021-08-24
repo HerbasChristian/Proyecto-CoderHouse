@@ -1,6 +1,5 @@
 main {
   section {
-    background-image: url("../images/index.jpg");
     div {
       a { 
         color: $default-tittle;
@@ -24,6 +23,9 @@ main {
         }
       }
     }
+  }
+  .main__index{
+    background-image: url(../images/index.jpg);
   }
 }
 
