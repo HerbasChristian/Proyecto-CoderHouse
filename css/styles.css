@@ -12,7 +12,11 @@
   src: url(../Fonts/Fonts/outrun-future.otf);
 }
 
-.header__nombre {
+header nav div a .border-primary {
+  border: solid #80c4df !important;
+}
+
+header nav div div .header__nombre {
   font-size: 1.1rem;
   font-family: outrun-future;
   font-weight: 100;
@@ -22,25 +26,21 @@
   color: white;
 }
 
-.me-auto {
-  margin-right: 0;
-}
-
-#navbarSupportedContent {
+header nav div #navbarSupportedContent {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
 
-#navbarSupportedContent ul li a {
+header nav div #navbarSupportedContent ul li a {
   color: #dfcf99;
 }
 
-#navbarSupportedContent ul li a:hover {
+header nav div #navbarSupportedContent ul li a:hover {
   color: white;
 }
 
-.bg-dark {
+header .bg-dark {
   background-color: black !important;
 }
 
@@ -48,8 +48,8 @@
   border-bottom: 0.1rem solid #dfcf99 !important;
 }
 
-.border-primary {
-  border: solid #80c4df !important;
+main .main__index {
+  background-image: url(../images/index.jpg);
 }
 
 main section div a {
@@ -79,10 +79,6 @@ main section div a h3 {
   text-align: center;
 }
 
-main .main__index {
-  background-image: url(../images/index.jpg);
-}
-
 footer {
   border-top: 0.1rem solid #dfcf99 !important;
 }
@@ -109,6 +105,10 @@ footer ul li a:hover {
 
 footer div a img {
   width: 2rem;
+}
+
+footer .bg-dark {
+  background-color: black !important;
 }
 
 .main__musica {
@@ -157,5 +157,10 @@ footer div a img {
 
 .background-informacion {
   background-image: url(../images/bginformacion.jpg);
+}
+
+.objfit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */

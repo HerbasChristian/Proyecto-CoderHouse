@@ -1,4 +1,7 @@
 main {
+  .main__index{
+    background-image: url(../images/index.jpg);
+  }
   section {
     div {
       a { 
@@ -23,9 +26,6 @@ main {
         }
       }
     }
-  }
-  .main__index{
-    background-image: url(../images/index.jpg);
   }
 }
 
