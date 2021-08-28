@@ -32,11 +32,11 @@ header nav div #navbarSupportedContent {
           flex-grow: 0;
 }
 
-header nav div #navbarSupportedContent ul li a {
+header nav div #navbarSupportedContent a {
   color: #dfcf99;
 }
 
-header nav div #navbarSupportedContent ul li a:hover {
+header nav div #navbarSupportedContent a:hover {
   color: white;
 }
 

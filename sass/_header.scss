@@ -1,7 +1,7 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0*50;
+  padding: 0*50;
   list-style-type: none;
   box-sizing: border-box;
 }
@@ -24,13 +24,13 @@ header {
           font-weight: 100;
           font-style: italic;
           text-align: center;
-          line-height: 70px;
+          line-height: 35px+35px;
           color: white;
         }
       }
       #navbarSupportedContent {
         flex-grow: 0;
-        ul li a {
+        a{
           color: $default-tittle;
           &:hover {
             color: white;
