@@ -120,6 +120,10 @@ footer .bg-dark {
   border: solid #dfcf99 !important;
 }
 
+.main__musica section div div img {
+  max-width: 50rem;
+}
+
 .main__cine {
   background-image: url(../images/bgcine.jpg);
 }
@@ -144,6 +148,14 @@ footer .bg-dark {
 
 .main__videojuegos section div div div div .border-primary {
   border: solid #dfcf99 !important;
+}
+
+.main__videojuegos section div div .border-primary {
+  border: solid #dfcf99 !important;
+}
+
+.main__videojuegos section div div img {
+  max-width: 50rem;
 }
 
 .fontdefault {

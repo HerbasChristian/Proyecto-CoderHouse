@@ -7,6 +7,9 @@
         .border-primary{
           border: solid $default-tittle !important;
         }
+        img{
+          max-width: 50rem;
+        }
       }
     }
   }
