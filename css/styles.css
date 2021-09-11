@@ -116,6 +116,10 @@ footer .bg-dark {
   background-repeat: round;
 }
 
+.main__musica section div {
+  max-width: 70rem;
+}
+
 .main__musica section div div .border-primary {
   border: solid #dfcf99 !important;
 }
@@ -126,6 +130,10 @@ footer .bg-dark {
 
 .main__cine {
   background-image: url(../images/bgcine.jpg);
+}
+
+.main__cine section div {
+  max-width: 70rem;
 }
 
 .main__cine section div .main__carousel {
@@ -144,6 +152,10 @@ footer .bg-dark {
 .main__videojuegos {
   background-image: url(../images/bgvideojuegos.jpg);
   background-repeat: round;
+}
+
+.main__videojuegos section div {
+  max-width: 70rem;
 }
 
 .main__videojuegos section div div div div .border-primary {
